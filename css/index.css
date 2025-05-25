@@ -1,0 +1,235 @@
+/* Geral */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Poppins-Regular, sans-serif;
+}
+
+a {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+    transition: all 0.4s;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(68, 24, 24);
+}
+
+/* Header/Menu */
+.header {
+    width: 100%;
+    background: linear-gradient(45deg, orange, black);
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    text-align: center;
+    color: rgb(68, 24, 24);
+    text-transform: uppercase;
+    font-family: Montserrat-Bold;
+    font-weight: bold;
+    font-size: 36px;       
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: rgb(68, 24, 24);
+    text-transform: uppercase;
+    font-family: Poppins-Medium;
+    padding: 2px;
+    transition: all 0.3s;
+    font-weight: bold;
+    text-decoration: none;    
+}
+
+.navbar a:hover {
+    background-color: rgb(158, 41, 12);
+    border-radius: 20px;    
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    background: url('../imagens/home.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-family: Montserrat-Bold;
+    font-size: 48px;
+    opacity: 0.6;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    font-family: Poppins-Regular;
+    font-size: 22px;
+    opacity: 0.6;
+    margin-top: 10px;
+}
+
+/* Seção de Atividades */
+.activity-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.activity-title {
+    text-align: center;
+    font-family: Montserrat-Bold;
+    font-size: 36px;
+    color: #333333;
+}
+
+.activity-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.activity-card {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 3px black solid;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.activity-card:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.activity-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.activity-card h3 {
+    font-family: Poppins-Bold;
+    font-size: 22px;
+    color: #333333;
+    margin-top: 15px;
+}
+
+.activity-card p {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    color: #666666;
+    margin-top: 10px;
+}
+
+/* Seção de Horário */
+.schedule-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.schedule-title {
+    text-align: center;
+    font-family: Montserrat-Bold;
+    font-size: 36px;
+    color: #333333;
+}
+
+.schedule-title2 {
+    text-align: center;
+    font-family: Montserrat-Bold;
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.schedule-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.schedule-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 3px black solid;
+    width: 250px;
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.schedule-card:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.schedule-card h3 {
+    font-family: Poppins-Bold;
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.time-slot {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    color: #666666;
+}
+
+/* Rodapé */
+.footer {
+    padding: 40px 0;
+    background: linear-gradient(45deg, orange, black);
+    text-align: center;
+    color: black;
+    max-width: 100%;
+}
+
+.footer p {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+}

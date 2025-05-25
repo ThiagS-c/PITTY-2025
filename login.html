@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Pitty Bem-Vindo</title>
+    <style>
+        /* Estilo geral */
+        body {
+            background-color: orangered;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 30px;
+            padding: 80px;
+            
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border: none;
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, background-color 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background-color: lightgray;
+        }
+
+        img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Responsividade para telas pequenas */
+        @media (max-width: 600px) {
+            .button-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">        
+        <a href="login_admin_index.html">
+            <button type="button">
+                <img src="imagens/instrutor.png" alt="Instrutor">
+                INSTRUTOR
+            </button>
+        </a>
+
+        <a href="LOGIN_ALU_INDEX.html">
+            <button type="button">
+                <img src="imagens/aluno.png" alt="Aluno">
+                ALUNO
+            </button>
+        </a>
+    </div>
+</body>
+</html>

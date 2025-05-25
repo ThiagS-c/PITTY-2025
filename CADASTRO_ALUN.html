@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitty NOVO ALUNO</title>
+    <style>
+        /* Estilo geral */
+        body {
+            background-color: orangered;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 40px;
+            border-radius: 15px;
+            width: 90%; /* Responsividade */
+            max-width: 400px; /* Limita a largura em telas grandes */
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: lightgray;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .back-button {
+            margin-top: 20px;            
+        }
+
+        /* Responsividade para telas pequenas */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>NOVO ALUNO</h2>
+        <form action="create.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" required>
+
+            <label for="sexo">Sexo:</label>
+            <input type="text" id="sexo" name="sexo" required>
+
+            <label for="nivel">Nível:</label>
+            <input type="text" id="nivel" name="nivel" required>
+
+            <label for="observacoes">Observações:</label>
+            <input type="text" id="observacoes" name="observacoes">
+
+            <label for="login">Login:</label>
+            <input type="text" id="login" name="login" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required><br>
+
+            <input type="submit" value="Adicionar">
+        </form>
+    </br>
+        <a href="MENU_INSTRUTOR.php?id_aluno=999" class="back-button">
+            <button type="button">VOLTAR</button>
+        </a>
+    </div>
+</body>
+</html>
